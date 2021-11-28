@@ -1,0 +1,6 @@
+const ageGap = (insertDate) => {
+  const start = Date.parse(`${insertDate}`);
+  const end = Date.now();
+  return Math.floor((end - start) / (24 * 60 * 60 * 1000 * 365.25));
+};
+console.log(ageGap(Deno.args));
